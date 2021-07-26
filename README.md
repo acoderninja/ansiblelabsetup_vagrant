@@ -1,19 +1,17 @@
 # Overview
 
-This lab is based on the Udemy course https://www.udemy.com/mastering-ansible/
 The lab has been built with Virtualbox VM host, and may not work with other VM providers without modification.
-This lab does not use Ansible via Vagrant, and thus Ansible is not a requirement on your Vagrant host. Ansible will be installed on an ansible host VM, and all playbooks to configure the lab machines will be run from there interactively, once Vagrant has built the base VMs. The lab configures a simple nginx load balancer, 2 web app servers and a mysql database.
 
 The lab will implement the following configuration:
 
 -
 | Machine  Name | Role          | Network Configuration                  | OS                         |
 |---------------|---------------|----------------------------------------|----------------------------|
-| control       | Ansible  host | private_network, ip: 192.168.135.10    | Ubuntu Trusty64 (14 LTS)   |
-| lb01          | Load Balancer | private_network, ip: 192.168.135.101   | Ubuntu Trusty64 (14 LTS)   |
-| app01         | web server 1  | private_network, ip: 192.168.135.111   | Ubuntu Trusty64 (14 LTS)   |
-| app02         | web server 2  | private_network, ip: 192.168.135.112   | Ubuntu Trusty64 (14 LTS)   |
-| db01          | mysql db      | private_network, ip: 192.168.135.121   | Ubuntu Trusty64 (14 LTS)   |
+| control       | Ansible  host | private_network, ip: 192.168.135.10    | Ubuntu bionic64 (18 LTS)   |
+| lb01          | Load Balancer | private_network, ip: 192.168.135.101   | Ubuntu bionic64 (18 LTS)   |
+| app01         | web server 1  | private_network, ip: 192.168.135.111   | Ubuntu bionic64 (18 LTS)   |
+| app02         | web server 2  | private_network, ip: 192.168.135.112   | Ubuntu bionic64 (18 LTS)   |
+| db01          | mysql db      | private_network, ip: 192.168.135.121   | Ubuntu bionic64 (18 LTS)   |
 
 # Quick Start
 
